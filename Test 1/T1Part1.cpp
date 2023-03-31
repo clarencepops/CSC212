@@ -21,9 +21,9 @@ class Time{
         }
     }; 
 
-    void Copy(Time T1, Time T2){
-        T1.H = T2.H;
-        T1.M = T2.M;
+    Time(const Time&Copy){
+        H = Copy.H;
+        H = Copy.M;
     }
 
     void operator=(const Time& T){
@@ -112,6 +112,8 @@ int main(){
     cout << D;
 
     D = A + 55;
+
+    
 
     cout << D;
     
